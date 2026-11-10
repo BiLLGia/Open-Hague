@@ -1,0 +1,39 @@
+[project]
+name = "open-hague"
+version = "0.1.0"
+description = "Open-source pipeline that makes The Hague's council decisions readable in English, tagged by coalition-agreement chapter."
+readme = "README.md"
+license = "EUPL-1.2"
+requires-python = ">=3.12"
+dependencies = [
+    "httpx>=0.27",            # BSD-3-Clause
+    "psycopg[binary]>=3.2",   # LGPL-3.0 (library use, unmodified)
+]
+
+[project.optional-dependencies]
+probe = [
+    "pdfplumber>=0.11",       # MIT, used by the probe to check for a PDF text layer
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8",              # MIT
+    "respx>=0.21",            # BSD-3-Clause, mocks httpx in tests
+    "ruff>=0.6",              # MIT
+]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+addopts = "-q"
+markers = ["db: needs a PostgreSQL database (set OPEN_HAGUE_TEST_DATABASE_URL)"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM", "RUF"]

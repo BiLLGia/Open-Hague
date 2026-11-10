@@ -1,0 +1,5 @@
+{"sources": [
+  {"key": "soest", "label": "Soest", "supplier": "notubiz", "organizationType": "gemeente", "implemented": true, "isAggregate": false},
+  {"key": "example-den-haag", "label": "Den Haag", "supplier": "notubiz", "organizationType": "gemeente", "implemented": true, "isAggregate": false},
+  {"key": "zuid-holland", "label": "Provincie Zuid-Holland", "supplier": "ibabs", "organizationType": "provincie", "implemented": true, "isAggregate": false}
+]}

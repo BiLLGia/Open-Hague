@@ -1,0 +1,23 @@
+# Labels = chapters of the coalition agreement "Voor Den Haag, met Den Haag" (2026-2030, RIS325929).
+# Chapter 1 (Inleiding) and 17 (Bijlagen) are not labels. Chapter 16 is a cross-cutting tag.
+# budget_programmes = programme numbers in the Programmabegroting 2027-2030.
+# description_nl: TODO (playbook step 4). Write 1-2 sentences per chapter from the agreement's
+# own text; the labeller compares documents against these.
+version: 1
+source: https://www.hartvoordenhaag.nl/wp-content/uploads/2026/07/Coalitieakkoord-2026-2030-Voor-Den-Haag-met-Den-Haag.pdf
+labels:
+  - {id: ch02, chapter: 2, nl: "Woningmarkt in beweging", en: "Housing market", budget_programmes: [13], description_nl: TODO}
+  - {id: ch03, chapter: 3, nl: "Bouwen aan een sterke stad", en: "Building the city", budget_programmes: [13], description_nl: TODO}
+  - {id: ch04, chapter: 4, nl: "Betere doorstroom voor een bereikbare stad", en: "Mobility & accessibility", budget_programmes: [12], description_nl: TODO}
+  - {id: ch05, chapter: 5, nl: "Samenwerken voor energie en duurzaamheid", en: "Energy & sustainability", budget_programmes: [3], description_nl: TODO}
+  - {id: ch06, chapter: 6, nl: "Leefbare wijken", en: "Liveable neighbourhoods", budget_programmes: [9, 14], description_nl: TODO}
+  - {id: ch07, chapter: 7, nl: "Sterk op veiligheid, zichtbaar in handhaving", en: "Safety & enforcement", budget_programmes: [4], description_nl: TODO}
+  - {id: ch08, chapter: 8, nl: "Een sterke economie in een internationale stad", en: "Economy & international city", budget_programmes: [11], description_nl: TODO}
+  - {id: ch09, chapter: 9, nl: "Werk, inkomen en vooruitkomen", en: "Work, income & opportunity", budget_programmes: [7], description_nl: TODO}
+  - {id: ch10, chapter: 10, nl: "Sportieve stad", en: "Sport", budget_programmes: [10], description_nl: TODO}
+  - {id: ch11, chapter: 11, nl: "Cultuur als kracht voor de stad", en: "Culture", budget_programmes: [5], description_nl: TODO}
+  - {id: ch12, chapter: 12, nl: "Jeugd en Onderwijs", en: "Youth & education", budget_programmes: [6], description_nl: TODO}
+  - {id: ch13, chapter: 13, nl: "Sterke zorg en gezonde wijken", en: "Care & health", budget_programmes: [8], description_nl: TODO}
+  - {id: ch14, chapter: 14, nl: "Samen besturen", en: "Governance & participation", budget_programmes: [1, 2], description_nl: TODO}
+  - {id: ch15, chapter: 15, nl: "Dienstverlening en gemeentelijke organisatie", en: "Services & municipal organisation", budget_programmes: [14], description_nl: TODO}
+  - {id: ch16, chapter: 16, nl: "Financiële paragraaf", en: "Finances", budget_programmes: [15], cross_cutting: true, description_nl: TODO}
